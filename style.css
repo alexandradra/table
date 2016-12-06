@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+td, tr, th {
+  border: 1px solid black;
+}
+td {
+  width: 150px;
+}
+thead {
+  background-color: #C689C0;
+}
