@@ -8,7 +8,36 @@
 </head>
 
 <body>
+    <form class="formulaire" action="index.html" method="post">
+        <fieldset class="contact">
+            <h2>Formulaire de contact</h2>
+            <p>
+                <label for="gender" required>Vous êtes :</label>
+                <select name="gender" id="gender">
+                <option value="gender_none" selected></option>
+                <option value="femme">Une femme</option>
+                <option value="homme">Un homme</option>
+                <option value="gender_nsp">Ne se prononce pas</option>
+              </select>
+            </p>
+            <p>
+                <label for="country" required>Votre pays :</label>
+                <select name="country" id="country">
+                <option value="country_none" selected></option>
+                  <option value="france">France</option>
+                  <option value="uk">Royaume-Uni</option>
+                  <option value="germany">Allemagne</option>
+                  <option value="spain">Espagne</option>
+                  <option value="portugal">Portugal</option>
+                  <option value="italia">Italie</option>
+              </select>
+                <p>Prénom : <input type="text" placeholder="Ex. : John" /></p>
+                <p>Nom : <input type="text" placeholder="Ex. : Doe" /></p>
+                <p>Age : <input type="number" min=0 max=100 /></p>
+                <p>Taille (en cm.) : <input type="number" min=100 max=250 /></p>
 
+        </fieldset>
+    </form>
     <table>
         <thead>
             <th>Prénoms</th>
