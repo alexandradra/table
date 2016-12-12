@@ -2,13 +2,14 @@
 const app = {}; //Initialise un hash vide (objet vide) afin de ne pa poluer le js --> Créée une variable globale
 
   app.people = [ //Ajoute une nouvelle clef à la const = app
-    { firstname: "Ryhad", surname: "Duchmol", age: 21, height: 176 },
+  /*  { firstname: "Ryhad", surname: "Duchmol", age: 21, height: 176 },
     { firstname: "César", surname: "Guéridon", age: 35, height: 189 },
     { firstname: "Sylvain", surname: "Michu", age: 65, height: 165 },
     { firstname: "Linda", surname: "Dupont", age: 12, height: 145 },
-    { firstname: "Elise", surname: "De la Villardière", age: 18, height: 160 },
+    { firstname: "Elise", surname: "De la Villardière", age: 18, height: 160 }, */
 ];
-  app.redraw = function() {
+  app.update = function() {
+    //TODO Save app.people in localStorage
     //Remove tbody content
     const tbody = document.querySelector('tbody');
     while (tbody.firstChild) {
@@ -34,13 +35,13 @@ const app = {}; //Initialise un hash vide (objet vide) afin de ne pa poluer le j
     height: formData.get("height")
   };
   app.people.push(newPerson);
-  app.redraw();
+  app.update();
 };
 
 // DOM bindings
 const ready = function() {
   // Initial drawing
-  app.redraw();
+  app.update();
   // On form submit
   document.getElementById("add-person").addEventListener("submit", app.onSubmit);
 }
