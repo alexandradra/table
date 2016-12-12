@@ -1,10 +1,17 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+}
+form, table {
+  margin: 10px auto;
+  width: 70%;
 }
 table {
   border: 2px solid black;
   border-collapse: collapse;
+  margin: 0 auto;
 }
 td, tr, th {
   border: 1px solid black;
@@ -14,7 +21,4 @@ td {
 }
 thead {
   background-color: #C689C0;
-}
-form {
-  margin: 10px 0;
 }

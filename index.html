@@ -8,10 +8,10 @@
 </head>
 
 <body>
-    <form class="formulaire" action="index.html" method="post">
+    <form id="add-person" action="index.html" method="post">
         <fieldset class="contact">
             <h2>Formulaire de contact</h2>
-            <p>
+            <!--<p>
                 <label for="gender" required>Vous êtes :</label>
                 <select name="gender" id="gender">
                 <option value="gender_none" selected></option>
@@ -30,15 +30,15 @@
                   <option value="spain">Espagne</option>
                   <option value="portugal">Portugal</option>
                   <option value="italia">Italie</option>
-              </select>
-                <p>Prénom : <input type="text" placeholder="Ex. : John" /></p>
-                <p>Nom : <input type="text" placeholder="Ex. : Doe" /></p>
-                <p>Age : <input type="number" min=0 max=100 /></p>
-                <p>Taille (en cm.) : <input type="number" min=100 max=250 /></p>
-
+              </select> -->
+                <p>Prénom : <input type="text" name="firstname" placeholder="Ex. : John" /></p>
+                <p>Nom : <input type="text" name="lastname" placeholder="Ex. : Doe" /></p>
+                <p>Age : <input type="number" name="age" min=0 max=100 /></p>
+                <p>Taille (en cm.) : <input type="number" name='height' min=100 max=250 /></p>
+                <input type="submit" id="submit" value="Envoyer"/>
         </fieldset>
     </form>
-    <table>
+    <table id="table-data">
         <thead>
             <th>Prénoms</th>
             <th>Noms</th>
